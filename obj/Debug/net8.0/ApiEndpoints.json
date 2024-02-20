@@ -1,0 +1,2275 @@
+[
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.AuthenController",
+    "Method": "GetSingleUserByName",
+    "RelativePath": "api/Authen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.AuthenController",
+    "Method": "Login",
+    "RelativePath": "api/Authen/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.UsersDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.AuthenController",
+    "Method": "Register",
+    "RelativePath": "api/Authen/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.UsersDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "GetAllCustomers",
+    "RelativePath": "api/Customers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "AddCustomers",
+    "RelativePath": "api/Customers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customers",
+        "Type": "CustomerBalanceApi.Models.Customers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "DeleteCustomerByCurrentBalance",
+    "RelativePath": "api/Customers/DeleteCustomerByCurrentBalance/{CurrentBalance}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentbalance",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "DeleteCustomerByEmailAddress",
+    "RelativePath": "api/Customers/DeleteCustomerByEmailAddress/{EmailAddress}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "DeleteCustomerByGender",
+    "RelativePath": "api/Customers/DeleteCustomerByGender/{Gender}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "DeleteCustomerByName",
+    "RelativePath": "api/Customers/DeleteCustomerByName/{Name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "DeleteCustomerByTelephone",
+    "RelativePath": "api/Customers/DeleteCustomerByTelephone/{Telephone}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "telephone",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "GetSingleCustomerByCurrentBalance",
+    "RelativePath": "api/Customers/GetSingleCustomerByCurrentBalance/{CurrentBalance}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentbalance",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Customers",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "GetSingleCustomerByEmailAddress",
+    "RelativePath": "api/Customers/GetSingleCustomerByEmailAddress/{EmailAddress}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Customers",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "GetSingleCustomerByGender",
+    "RelativePath": "api/Customers/GetSingleCustomerByGender/{Gender}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Customers",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "GetSingleCustomerByName",
+    "RelativePath": "api/Customers/GetSingleCustomerByName/{Name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Customers",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "GetSingleCustomerByTelephone",
+    "RelativePath": "api/Customers/GetSingleCustomerByTelephone/{Telephone}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "telephone",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Customers",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "UpdateCustomerByCurrentBalance",
+    "RelativePath": "api/Customers/UpdateCustomerByCurrentBalance/{CurrentBalance}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentbalance",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Customers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "UpdateCustomerByEmailAddress",
+    "RelativePath": "api/Customers/UpdateCustomerByEmailAddress/{EmailAddress}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Customers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "UpdateCustomerByGender",
+    "RelativePath": "api/Customers/UpdateCustomerByGender/{Gender}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Customers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "UpdateCustomerByName",
+    "RelativePath": "api/Customers/UpdateCustomerByName/{Name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Customers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.CustomersController",
+    "Method": "UpdateCustomerByTelephone",
+    "RelativePath": "api/Customers/UpdateCustomerByTelephone/{Telephone}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "telephone",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Customers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Customers, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.ProductsController",
+    "Method": "GetAllProducts",
+    "RelativePath": "api/Products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Products, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.ProductsController",
+    "Method": "AddProducts",
+    "RelativePath": "api/Products",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "products",
+        "Type": "CustomerBalanceApi.Models.Products",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Products, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.ProductsController",
+    "Method": "DeleteProductByItem",
+    "RelativePath": "api/Products/DeleteProductByItem/{Item}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Products, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.ProductsController",
+    "Method": "DeleteProductByPriceOfItem",
+    "RelativePath": "api/Products/DeleteProductByPriceOfItem/{PriceOfItem}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "priceofitem",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Products, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.ProductsController",
+    "Method": "GetSingleProductByItem",
+    "RelativePath": "api/Products/GetSingleProductByItem/{Item}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Products",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.ProductsController",
+    "Method": "GetSingleProductByPriceOfItem",
+    "RelativePath": "api/Products/GetSingleProductByPriceOfItem/{PriceOfItem}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "priceofitem",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Products",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.ProductsController",
+    "Method": "UpdateProductByItem",
+    "RelativePath": "api/Products/UpdateProductByItem/{Item}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Products",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Products, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.ProductsController",
+    "Method": "UpdateProductByPriceOfItem",
+    "RelativePath": "api/Products/UpdateProductByPriceOfItem/{PriceOfItem}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "priceofitem",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Products",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Products, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetAllTransactions",
+    "RelativePath": "api/Transactions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transactions",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "AddTransactions",
+    "RelativePath": "api/Transactions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transactions",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByAccountCredit",
+    "RelativePath": "api/Transactions/GetSingleTransactionByAccountCredit/{AccountCredit}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountcredit",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByAccountDebit",
+    "RelativePath": "api/Transactions/GetSingleTransactionByAccountDebit/{AccountDebit}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountdebit",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByCurrentBalance",
+    "RelativePath": "api/Transactions/GetSingleTransactionByCurrentBalance/{CurrentBalance}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentbalance",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByEmailAddress",
+    "RelativePath": "api/Transactions/GetSingleTransactionByEmailAddress/{EmailAddress}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByFirstPayment",
+    "RelativePath": "api/Transactions/GetSingleTransactionByFirstPayment/{FirstPayment}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "firstpayment",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByFirstPaymentAddress",
+    "RelativePath": "api/Transactions/GetSingleTransactionByFirstPaymentAddress/{FirstPaymentAddress}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "firstpaymentaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByItemPurchased",
+    "RelativePath": "api/Transactions/GetSingleTransactionByItemPurchased/{ItemPurchased}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itempurchased",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByModeOfFirstPayment",
+    "RelativePath": "api/Transactions/GetSingleTransactionByModeOfFirstPayment/{ModeOfFirstPayment}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modeoffirstpayment",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByModeOfSecondPayment",
+    "RelativePath": "api/Transactions/GetSingleTransactionByModeOfSecondPayment/{ModeOfSecondPayment}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modeofsecondpayment",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByName",
+    "RelativePath": "api/Transactions/GetSingleTransactionByName/{Name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByPriceOfItem",
+    "RelativePath": "api/Transactions/GetSingleTransactionByPriceOfItem/{PriceOfItem}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "priceofitem",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioBySecondPayment",
+    "RelativePath": "api/Transactions/GetSingleTransactionBySecondPayment/{SecondPayment}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secondpayment",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioBySecondPaymentAddress",
+    "RelativePath": "api/Transactions/GetSingleTransactionBySecondPaymentAddress/{SecondPaymentAddress}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secondpaymentaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByTelephone",
+    "RelativePath": "api/Transactions/GetSingleTransactionByTelephone/{Telephone}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "telephone",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByTotalSumOfItems",
+    "RelativePath": "api/Transactions/GetSingleTransactionByTotalSumOfItems/{TotalSumOfItems}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "totalsumofitems",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "GetSingleTransactioByTransaction",
+    "RelativePath": "api/Transactions/GetSingleTransactionByTransaction/{Transaction}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transaction",
+        "Type": "System.DateTimeOffset",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByAccountCredit",
+    "RelativePath": "api/Transactions/UpdateTransactionByAccountCredit/{AccountCredit}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountcredit",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByAccountDebit",
+    "RelativePath": "api/Transactions/UpdateTransactionByAccountDebit/{AccountDebit}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountdebit",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByCurrentBalance",
+    "RelativePath": "api/Transactions/UpdateTransactionByCurrentBalance/{CurrentBalance}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentbalance",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByEmailAddress",
+    "RelativePath": "api/Transactions/UpdateTransactionByEmailAddress/{EmailAddress}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByFirstPayment",
+    "RelativePath": "api/Transactions/UpdateTransactionByFirstPayment/{FirstPayment}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "firstpayment",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByFirstPaymentAddress",
+    "RelativePath": "api/Transactions/UpdateTransactionByFirstPaymentAddress/{FirstPaymentAddress}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "firstpaymentaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByItemPurchased",
+    "RelativePath": "api/Transactions/UpdateTransactionByItemPurchased/{ItemPurchased}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itempurchased",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByModeOfFirstPayment",
+    "RelativePath": "api/Transactions/UpdateTransactionByModeOfFirstPayment/{ModeOfFirstPayment}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modeoffirstpayment",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByModeOfSecondPayment",
+    "RelativePath": "api/Transactions/UpdateTransactionByModeOfSecondPayment/{ModeOfSecondPayment}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modeofsecondpayment",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByName",
+    "RelativePath": "api/Transactions/UpdateTransactionByName/{Name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByPriceOfItem",
+    "RelativePath": "api/Transactions/UpdateTransactionByPriceOfItem/{PriceOfItem}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "priceofitem",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionBySecondPayment",
+    "RelativePath": "api/Transactions/UpdateTransactionBySecondPayment/{SecondPayment}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secondpayment",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionBySecondPaymentAddress",
+    "RelativePath": "api/Transactions/UpdateTransactionBySecondPaymentAddress/{SecondPaymentAddress}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secondpaymentaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByTelephone",
+    "RelativePath": "api/Transactions/UpdateTransactionByTelephone/{Telephone}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "telephone",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByTotalSumOfItems",
+    "RelativePath": "api/Transactions/UpdateTransactionByTotalSumOfItems/{TotalSumOfItems}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "totalsumofitems",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.TransactionsController",
+    "Method": "UpdateTransactionByTransaction",
+    "RelativePath": "api/Transactions/UpdateTransactionByTransaction/{Transaction}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transaction",
+        "Type": "System.DateTimeOffset",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Transactions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Transactions, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "AddUsers",
+    "RelativePath": "api/Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "users",
+        "Type": "CustomerBalanceApi.Models.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "DeleteUserByEmailAddress",
+    "RelativePath": "api/Users/DeleteUserByEmailAddress/{EmailAddress}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "DeleteUserByGender",
+    "RelativePath": "api/Users/DeleteUserByGender/{Gender}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "DeleteUserByName",
+    "RelativePath": "api/Users/DeleteUserByName/{Name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "DeleteUserByPasswordHash",
+    "RelativePath": "api/Users/DeleteUserByPasswordHash/{PasswordHash}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "passwordhash",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "DeleteUserByTelephone",
+    "RelativePath": "api/Users/DeleteUserByTelephone/{Telephone}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "telephone",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "DeleteUserByUserName",
+    "RelativePath": "api/Users/DeleteUserByUserName/{UserName}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "GetSingleUserByEmailAddress",
+    "RelativePath": "api/Users/GetSingleUserByEmailAddress/{EmailAddress}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "GetSingleUserByGender",
+    "RelativePath": "api/Users/GetSingleUserByGender/{Gender}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "GetSingleUserByName",
+    "RelativePath": "api/Users/GetSingleUserByName/{Name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "GetSingleUserByPasswordHash",
+    "RelativePath": "api/Users/GetSingleUserByPasswordHash/{PasswordHash}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "passwordhash",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "GetSingleUserByTelephone",
+    "RelativePath": "api/Users/GetSingleUserByTelephone/{Telephone}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "telephone",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "GetSingleUserByUserName",
+    "RelativePath": "api/Users/GetSingleUserByUserName/{UserName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CustomerBalanceApi.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "UpdateUserByEmailAddress",
+    "RelativePath": "api/Users/UpdateUserByEmailAddress/{EmailAddress}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailaddress",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "UpdateUserByGender",
+    "RelativePath": "api/Users/UpdateUserByGender/{Gender}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "UpdateUserByName",
+    "RelativePath": "api/Users/UpdateUserByName/{Name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "UpdateUserByPasswordHash",
+    "RelativePath": "api/Users/UpdateUserByPasswordHash/{PasswordHash}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "passwordhash",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "UpdateUserByTelephone",
+    "RelativePath": "api/Users/UpdateUserByTelephone/{Telephone}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "telephone",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.UsersController",
+    "Method": "UpdateUserByUserName",
+    "RelativePath": "api/Users/UpdateUserByUserName/{UserName}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CustomerBalanceApi.Models.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CustomerBalanceApi.Models.Users, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomerBalanceApi.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CustomerBalanceApi.WeatherForecast, CustomerBalanceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
